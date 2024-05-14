@@ -1,0 +1,20 @@
+// Write a program to calculate the sum of the digits of a given positive integer.
+
+#include <stdio.h>
+
+int main() {
+    int num, sum = 0, digit;
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+
+    while (num != 0) {
+        digit = num % 10;
+        sum += digit;
+        num /= 10;
+    }
+
+    printf("Sum of digits: %d\n", sum);
+
+    return 0;
+}

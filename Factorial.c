@@ -1,18 +1,19 @@
-// Write a program to calculate the factorial of a given positive integer using a for loop.
-
+// Write a program to calculate the factorial of a given positive integer n.
 #include <stdio.h>
 
 int main() {
-    int n, factorial = 1;
+    int n, factorial = 1, i = 1;
 
     printf("Enter a positive integer: ");
     scanf("%d", &n);
 
-    for (int i = 1; i <= n; i++) {
+    while (i <= n) {
         factorial *= i;
+        i++;
     }
 
     printf("Factorial of %d is: %d\n", n, factorial);
 
     return 0;
 }
+
